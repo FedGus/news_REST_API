@@ -11,9 +11,11 @@
 
     <ImageView
         android:id="@+id/newsImage"
-        android:layout_width="400px"
+        android:layout_width="600px"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:background="@android:drawable/editbox_dropdown_dark_frame"
+        android:scaleType="center" />
 
     <LinearLayout
         android:layout_width="match_parent"

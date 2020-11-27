@@ -48,11 +48,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.ViewHolder> {
         Calendar cal = Calendar.getInstance(Locale.ENGLISH);
         cal.setTimeInMillis(news.date * 1000L);
         String date = DateFormat.format("dd.MM.yyyy hh:mm", cal).toString();
-
-
-            holder.dateNews.setText("Дата: "+ date );
-
-
+        holder.dateNews.setText("Дата: "+ date );
 
         news.image_A.delete(0,7);
         Log.d(TAG, "onBindViewHolder: " + news.image_A);
